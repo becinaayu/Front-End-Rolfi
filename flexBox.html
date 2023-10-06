@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <!-- O head meta é uma tag que define a resposividade para o render (navegador) -->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!-- Flex -->
+    <style>
+        .container{
+            background-color: rgb(146, 201, 211);
+            display: flex;
+            flex-direction: row; 
+            width: 200px;
+            /* Sem o nowrap (quebra) todos os itens filhos 
+            devem se encaixar 
+            Com o wrap (quebra) os itens quebram a linha */
+            /* flex-wrap: wrap; */
+            /* row-reverse */
+        }
+        .item{
+            background-color: rgb(169, 165, 224);
+            border: 1px solid rgb(216, 137, 203);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @media (max-width:800px) {
+            .container{
+                flex-direction: column;
+                /* column-reverse */
+                background-color: rgb(179, 23, 12);
+                width: 100px;
+            }
+        }
+    </style>
+
+<body>
+
+    Olá teste do Flex
+
+    <div class="container">
+        <p class="item"> TESTE 1 </p>
+        <p class="item"> TESTE 2 </p>
+        <p class="item"> TESTE 3 </p>
+        <p class="item"> TESTE 4 </p>
+    </div>
+
+    esse é um bloco
+
+</body>
+</html>
