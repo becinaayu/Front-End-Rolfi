@@ -1,34 +1,48 @@
-<!DOCTYPE html>
-<html>
-    <!-- box model -->
-    <style>
-        .container{
-            background-color: rgb(146, 201, 211);
-            width: 400px;
-            height: 150px;
-            margin-top: 50px;
-            margin-left: 50px;
+<!DOCTYPE html> 
+<html>  
+    <!-- tag que define a expansaividade para o render (navegador), considerando um navegador móvel --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- flex model --> 
+    <!-- feito para que eu possa controar  --> 
+    <style> 
+        .container{ 
+            background-color:blueviolet ; 
+            display: flex; 
+            /* tranformando em colunas */ 
+            /* flex-direction: column;   */ 
+            flex-direction: row; 
 
-            /* não vai ter responsividade se for feito à mão */
-            /* display: block;  */
+            /* row-reverse */ 
+            width: 150px; 
+            flex-wrap: wrap; /* Wrap os itens quebram a linha  */ 
+        } 
+
+        .item{ 
+            background-color: bisque; 
+            border: 2px solid black; 
+            margin: 10px 
         }
-        .item{
-            margin: 10px; 
-            background-color: rgb(169, 165, 224);
-            padding: 10px;
-            border: 1px solid rgb(216, 137, 203);
-        }
-    </style>
 
-<body>
+        /* @media é usado para echar na expasividade. Definimos a patir de que momento ela começa a se usada  */ 
 
-    Olá teste do bloco 
-
-    <div class="container">
-        <p class="item"> TESTE 1 </p>
-    </div>
-
-    esse é um bloco
-
-</body>
-</html>
+        @media(max-width:800px) {  
+            
+            .container{ 
+                flex-direction: column; 
+                /* column-reverse */ 
+                background-color:deeppink; 
+                width: 100px; 
+            } 
+        } 
+         </style> 
+    <body> 
+        oi este bloco 
+        <div class="container"> 
+            <p class="item">Teste 1</p> 
+            <p class="item">Teste 2</p> 
+            <p class="item">Teste 3</p> 
+            <p class="item">Teste 4</p> 
+        </div> 
+        esse é um bloco  
+    </body> 
+</html> 
