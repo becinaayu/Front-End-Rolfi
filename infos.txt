@@ -1,0 +1,20 @@
+Formação Da Challenge (Em Grupo)
+Entrega: Teams (1 por grupo)
+
+CP 02 - 10/11 
+Fazer o site do ICr:
+    * Home page
+    * Mais duas páginas (Enfermagem, Portal do Paciente)
+O que vai ser cobrado:
+    * Layouts 
+    * Imagens
+    * Organização do Site
+
+* Não precisa ser responsivo
+
+CP 03 - 13/11
+Fazer um novo site do Icr com um template qualquer
+    * Usar os mesmos conteudos do site do ICr
+    * Não pode usar framework 
+
+* Pesquisar por embed para colocar no site

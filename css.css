@@ -1,0 +1,34 @@
+body {
+    background: rgb(26, 25, 25);
+}
+.container{
+    /* cria uma grade */
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+     "CAB CAB CAB"
+     "rd rd rd";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr; /* columns = coluna */
+    grid-template-rows: 1FR 1FR; /* rows = linhas */
+
+}
+.item1{
+    grid-area: CAB; /* Apelido da grid item1 */
+    background-color: rgb(166, 126, 204);
+    border: 1px solid black;
+    color: aliceblue;
+    
+}
+
+.item2{
+    grid-area: rd;
+    background-color: #7ba2c7;
+    border: 1px solid rgb(0, 0, 0);
+    color: aliceblue;
+    
+}
