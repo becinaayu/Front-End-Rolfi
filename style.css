@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(143, 226, 198);
+}
+/* desktop */
+@media (min-width: 1200px) and (max-width: 1919px) {
+    body {
+        background-color: rgb(183, 140, 226);
+    }
+}
+
+/* notebooks */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-color: rgb(255, 246, 163);
+    }
+}
